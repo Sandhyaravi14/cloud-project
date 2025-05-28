@@ -15,9 +15,9 @@ pipeline {
         }
 
         stage('Run Flask App') {
-            steps {
-                bat '"C:\\Users\\sandh\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" app.py'
-            }
-        }
+    steps {
+        bat 'start "" "C:\\Users\\sandh\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" app.py'
+    }
+}
     }
 }
