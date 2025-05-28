@@ -10,13 +10,13 @@ pipeline {
 
         stage('Install Flask') {
             steps {
-                bat 'pip install flask'
+                bat '"C:\\Users\\sandh\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\pip.exe" install flask'
             }
         }
 
         stage('Run Flask App') {
             steps {
-                bat 'python app.py'
+                bat '"C:\\Users\\sandh\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" app.py'
             }
         }
     }
